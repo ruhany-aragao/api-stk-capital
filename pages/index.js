@@ -1,17 +1,9 @@
-import Link from "next/link";
-
-function Posts({ posts }) {
+function Home() {
   return (
-    <ul>
-      {posts.map((post) => (
-        <li key={post.id}>
-          <Link href={`/blog/${encodeURIComponent(post.slug)}`}>
-            {post.title}
-          </Link>
-        </li>
-      ))}
-    </ul>
+    <div>
+      <h1>Home</h1>
+    </div>
   );
 }
 
-export default Posts;
+export default Home;
